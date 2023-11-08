@@ -55,7 +55,7 @@ const UserAccountNav = async ({
           <div className="flex flex-col space-y-0.5 leading-none">
             {name && <p className="font-medium text-sm text-black">{name}</p>}
             {email && (
-              <p className="w-[200px] truncate text-xs text-zinc0700">
+              <p className="w-[200px] truncate text-xs text-zinc-700">
                 {email}
               </p>
             )}
