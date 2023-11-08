@@ -34,6 +34,7 @@ export async function POST(request: Request) {
     const subscription = await stripe.subscriptions.retrieve(
       session.subscription as string
     );
+
     await db.user.update({
       where: {
         id: session.metadata.userId,
@@ -54,6 +55,7 @@ export async function POST(request: Request) {
     const subscription = await stripe.subscriptions.retrieve(
       session.subscription as string
     );
+
     await db.user.update({
       where: {
         stripeSubscriptionId: subscription.id,
