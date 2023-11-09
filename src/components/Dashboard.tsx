@@ -76,7 +76,7 @@ const Dashboard = ({ subscriptionPlan }: PageProps) => {
                   </div>
                   <div className="flex items-center gap-2">
                     <MessageSquare className="h-4 w-4" />
-                    brruh
+                    Hello
                   </div>
                   <Button
                     variant="destructive"
